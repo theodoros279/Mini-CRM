@@ -1,0 +1,194 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Mini CRM */
+.main-content {
+    padding: 20px;
+}
+.main-content  h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+}
+.submit-btn, .form-group {
+    margin-top: 20px;
+}
+
+/* Landing Page */
+.header-container {
+    background-image: url('/public/images/header.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+}
+.header-container h1 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #fff;
+}
+.header-content {
+    width: 70%;
+    display: flex;
+    margin: auto;
+    height: 90%;
+    flex-direction: column;
+    justify-content: center;
+}
+.header-logo {
+    max-width: 130px;
+    padding-bottom: 20px;
+}
+.header-container button, .section-2 button, .section-4 button {
+    background-color: rgb(3, 213, 179);
+    padding: 7px 30px;
+    border-radius: 20px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 30px;
+}
+.section-2 {
+    padding: 80px 20px;
+    text-align: center;
+}
+.section-2>p{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    margin: auto;
+    padding-bottom: 30px;
+    max-width: 85%;
+}
+.section-2 button {
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+.section-2 .title {
+    font-size: 23px;
+    font-weight: 700;
+    color: #bf0000;
+    padding-bottom: 15px;
+}
+.section-2 .col {
+    text-align: left;
+    background-color: rgba(214, 214, 214, 0.85);
+    border-radius: 40px;
+    padding: 40px;
+    max-width: 600px;
+}
+.section-2 .col p {
+    padding: 10px 0;
+    text-align: left;
+}
+.section-2 .row {
+    gap: 30px;
+}
+
+.section-3 {
+    background-image: url('/public/images/image.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+}
+.section-3 h3 {
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+.section-3 .col-5{
+    padding-top: 120px;
+    color: #fff;
+}
+.section-4 {
+    background-image: url('/public/images/background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+.section-4>div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.section-4>div h2 {
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+.section-5 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.section-5 h3 {
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+.section-5 .logo-black {
+    max-width: 200px;
+    margin: auto;
+}
+.section-5 .text {
+    padding-top: 50px;
+}
+
+/*Tablet*/
+@media only screen and (max-width: 1200px) {
+    .header-content {
+        width: 60%;
+    }
+    .section-2>p {
+        max-width: 100%;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .section-2 .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-3 .col-6 {
+        width: 30%;
+    }
+    .section-3 .col-5 {
+        padding-top: 50px;
+        width: 70%;
+    }
+}
+
+/*Mobile*/
+@media only screen and (max-width: 576px) {
+    .header-container h1 {
+        font-size: 20px;
+    }
+    .header-content {
+        width: 100%;
+        text-align: center;
+    }
+    .logo-container {
+        margin: 0 auto;
+    }
+    .section-2>p {
+        max-width: 100%;
+        font-size: 16px;
+    }
+    .section-3 h3, .section-3 p {
+        text-align: center;
+    }
+    .section-3 .col-5 {
+        width: 100%;
+    }
+    .section-5 .row {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 20px;
+    }
+}
